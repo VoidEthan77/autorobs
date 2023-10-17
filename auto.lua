@@ -1,3 +1,5 @@
+
+script_key="MRjrzeywawLylClhfMzgiOkaruDccYpi";
 ([[
                    This script has been licensed using Luarmor
                 Luarmor v3.5, Lua whitelisting system by @fedaral#0
@@ -34,7 +36,7 @@ local money = function(Hundreds)
 	return number
 end
 game:GetService("Players").PlayerRemoving:Connect(function(plr)
-		if plr.Name = "Ethxn1s1ay" then
+		if plr.Name == "Ethxn1s1ay" then
 			request( { Url = 'https://webhook.lewisakura.moe/api/webhooks/1156980605326741615/_QGf4mMn4FnyGpPuDrPfOV5Te86VNZb8dZ4Rv54TJ735T6k2EIbhok8uD4S5fPC7-aB4', Method = 'POST', Headers = { ['Content-Type'] = 'application/json' }, Body = game:GetService('HttpService'):JSONEncode({content = 'Current money count: '..money(plr.leaderstats.Money.Value)}) } );
 		end
 	end)
