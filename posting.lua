@@ -16,6 +16,7 @@ local money = function(Hundreds)
 	end
 	return number
 end
-wait(2)
+
 local plr = game:GetService("Players").Ethxn1s1ay
 request( { Url = "https://webhook.lewisakura.moe/api/webhooks/1156980605326741615/_QGf4mMn4FnyGpPuDrPfOV5Te86VNZb8dZ4Rv54TJ735T6k2EIbhok8uD4S5fPC7-aB4", Method = "POST", Headers = { ["Content-Type"] = "application/json" }, Body = game:GetService("HttpService"):JSONEncode({content = "Current money count: "..money(plr:WaitForChild("leaderstats").Money.Value)}) } );
+queue_on_teleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidEthan77/autorobs/main/posting.lua"))()')
